@@ -37,6 +37,9 @@ public class Driver {
                     WebDriverManager.safaridriver().setup();
                     obj = new SafariDriver();
                     break;
+                case "edge":
+                    WebDriverManager.edgedriver().setup();
+                    break;
                 // other browsers omitted
                 default:
                     obj = null ;
